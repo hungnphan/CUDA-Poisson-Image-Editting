@@ -244,6 +244,7 @@ def poisson_edit(source, target, mask, offset):
         # outside the mask:
         # f = t
         mat_b[mask_flat==0] = target_flat[mask_flat==0]
+        print(type(mat_b), mat_b.shape)
 
         # x = cupy_lsqr(mat_A, mat_b)
         # x = x.reshape((y_range, x_range))
