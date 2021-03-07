@@ -55,6 +55,7 @@ def poisson_edit(source, target, mask, offset):
     ############################
     # Calculation parts
     ############################
+    # lil format
     mat_A = laplacian_matrix(y_range, x_range)
 
     # for \Delta g
